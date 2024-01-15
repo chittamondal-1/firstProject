@@ -1,4 +1,6 @@
 
+
+/* images socle start */
 const imgContainerEl = document.querySelectorAll(".img-contaner");
 
 let count = 1
@@ -17,3 +19,32 @@ setInterval(() => {
            }
     
 }, 5000);
+
+/* nave image socle */
+
+
+const navbar = document.querySelector(".nve")
+
+     
+window.addEventListener("scroll",()=>{
+
+    if(window.pageYOffset >= 350){
+          navbar.classList.add("styki")
+    }else{
+     navbar.classList.remove("styki")
+    }
+
+})
+
+/* section-1 image */
+
+const imageContenElement = document.querySelector(".imageConten");
+
+          window.addEventListener("scroll",()=>{
+
+               if(window.pageYOffset >= 700){
+                    imageContenElement.classList.add("move")
+               }else{
+                    imageContenElement.classList.remove("move")
+               }
+          })
