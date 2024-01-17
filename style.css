@@ -38,6 +38,30 @@ body{
     width:100%;
 
 }
+
+.audio{
+    height:70px;
+    width:100px;
+    position:absolute;
+    top:500px;
+    right:10px;
+    z-index: 99;
+    position:fixed;
+    text-align: right;
+    background-color: rgb(216, 98, 98);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:0 3px;
+    border-radius: 10px;
+    
+}
+.audio audio{
+    width:100%;
+   
+}
+
+
 .header-area{
     width:90%;
     margin:0 auto;
@@ -209,6 +233,7 @@ body{
     width:50%;
    padding:3rem;
    position:relative;
+   margin-right:rem;
 }
 
 .text-content h1{
@@ -255,6 +280,11 @@ body{
 }
 .section-1 .ancur-button a{
     color:white;
+    transition:color 0.5s;
+}
+
+.section-1 .ancur-button a:hover{
+    color:red;
 }
 
 .section-1 .ancur-button i{
@@ -272,30 +302,86 @@ body{
 .section-1 .ancur-button:hover {
 
         background-color: var(--bs-info);
+        color:red;
 
 }
 
 .section-1 .imageArea{
     width:50%;
     position: relative;
+    overflow: hidden;
     
 }
 
 .section-1 .imageArea .imageConten{
-    width:100%;
+    width:80%;
     position: absolute;
-    top:0;
+    top:50px;
     right:-700px;
-    border: 9px;
     transition: transform 3s;
    
 }
 .move{
-    transform: translateX(-700px);
-    transition: transform 3s;
+ transform: translateX(-800px);
 }
+
 
 .section-1 .imageArea .imageConten img{
     width:100%;
     border-radius: 9px;
+    position:absolute
+}
+.section-2{
+    width:100%;
+    height:400px;
+    background-color: var(--bs-cyan);
+    display: flex;
+    justify-content:center;
+    align-items: center;
+
+}
+.section-2 #fetuer{
+    width:300px;
+    height:200px;
+    background-color:#2ed573;
+    margin: 0 1rem;
+    box-shadow: 0 0 19px rgba(0,0,0,0.9);
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: scale 1s;
+}
+
+.section-2 #fetuer:hover{
+    scale: 1.1;
+}
+
+.section-2 #fetuer .logo-img{
+    width:100px;
+    height:100px;
+    background-color: #e7e7e7;
+    display:inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 19px rgba(0,0,0,0.9);
+}
+
+.inner-text{
+    margin-right:8px;
+}
+
+.section-2 #fetuer .logo-img img{
+    width:50px;
+}
+
+.section-2 #fetuer .inner-text h1{
+    font-size: 30px;
+    margin-bottom:50px;
+}
+
+.section-2 #fetuer .inner-text h3{
+    font-size:16px;
 }
