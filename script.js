@@ -38,13 +38,32 @@ window.addEventListener("scroll",()=>{
 
 /* section-1 image */
 
-const imageContenElement = document.querySelector(".imageConten");
+const imageContenElement = document.querySelector(".imga-contaner");
 
           window.addEventListener("scroll",()=>{
 
-               if(window.pageYOffset >= 700){
-                    imageContenElement.classList.add("move")
+               if(window.pageYOffset >=2700){
+                    imageContenElement.classList.add("animation")
+                    console.log("hello")
                }else{
-                    imageContenElement.classList.remove("move")
+                    imageContenElement.classList.remove("animation")
                }
           })
+
+
+/* section 4 */
+
+
+/* const imgConten2 = document.querySelector("sliding");
+
+
+window.addEventListener("scroll",()=>{ 
+
+     if(window.pageYOffset >= 2100){
+
+          imgConten2.classList.add("move");
+          
+     }else{
+          imgConten2.classList.remove("move"); 
+     }
+}) */
