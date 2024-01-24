@@ -130,6 +130,7 @@ body{
 
 .nve ul{
     display: flex;
+    justify-content: center;
    
 } 
 
@@ -138,6 +139,9 @@ body{
   margin:0 1rem;
   color:white;
   position:relative;
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-weight: bold;
  
 }
 
@@ -321,9 +325,9 @@ body{
     transition: transform 3s;
    
 }
-.move{
+ .move{
  transform: translateX(-800px);
-}
+} 
 
 
 .section-1 .imageArea .imageConten img{
@@ -527,7 +531,7 @@ body{
 
 }
 
-.images-sliding:hover .imga-contaner{
+.images-sliding:hover .imga-contaner.animation{
     animation-play-state: paused;
 
 }

@@ -36,7 +36,21 @@ window.addEventListener("scroll",()=>{
 
 })
 
-/* section-1 image */
+
+/* aection--1 imagesScroll */
+
+const imageContenEle = document.querySelector(".imageConten");
+window.addEventListener("scroll",()=>{
+
+     if(window.pageYOffset >=700){
+          imageContenEle.classList.add("move")
+     
+     }else{
+          imageContenEle.classList.remove("move")
+     }
+})
+
+/* section-4 image */
 
 const imageContenElement = document.querySelector(".imga-contaner");
 
@@ -44,7 +58,7 @@ const imageContenElement = document.querySelector(".imga-contaner");
 
                if(window.pageYOffset >=2700){
                     imageContenElement.classList.add("animation")
-                    console.log("hello")
+               
                }else{
                     imageContenElement.classList.remove("animation")
                }
@@ -66,4 +80,4 @@ window.addEventListener("scroll",()=>{
      }else{
           imgConten2.classList.remove("move"); 
      }
-}) */
+})  */
