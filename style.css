@@ -63,7 +63,7 @@ body{
 
 
 .header-area{
-    width:90%;
+    width:100%;
     margin:0 auto;
 }
 .header{
@@ -139,7 +139,7 @@ body{
   margin:0 1rem;
   color:white;
   position:relative;
-  font-size: 20px;
+  font-size: 16px;
   letter-spacing: 1px;
   font-weight: bold;
  
@@ -174,7 +174,7 @@ body{
 
 
 .prodect > ul{
-    width:150px;
+    width:170px;
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -554,6 +554,7 @@ body{
     width:100%;
     background: linear-gradient(to top, #d8e3bb, #00924b); 
     padding-bottom: 5rem;
+    overflow: hidden;
  }
 
  .section-5 .heading{
@@ -587,7 +588,7 @@ body{
     align-items: center;
     border-radius:  10px;
     z-index: 1;
-   
+   flex: none;
 
  }
 

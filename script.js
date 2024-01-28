@@ -67,17 +67,47 @@ const imageContenElement = document.querySelector(".imga-contaner");
 
 /* section 4 */
 
+/* section 5 */
+const contantsContainer = document.querySelector(".contants-container");
+const content = document.querySelectorAll(".content");
+const interval = 2000;
+const clintWidth = content[1].clientWidth;
+ 
+const firstClone = content[0].cloneNode(true);
+const lastClone = content[content.length-1].cloneNode(true);
 
-/* const imgConten2 = document.querySelector("sliding");
+let index = 1;
+
+firstClone.id = "first-clone";
+lastClone.id = "last-clone"
+
+contantsContainer.append(firstClone);
+
+contantsContainer.prepend(lastClone);
+
+function slide(){
+
+ setInterval(() => {
+     index++;
+     contantsContainer.style.transform = `translateX(-${ clintWidth * (index-1) }px)`
+     contantsContainer.style.transition = ".7s";
+     
+ }, interval);
 
 
-window.addEventListener("scroll",()=>{ 
-
-     if(window.pageYOffset >= 2100){
-
-          imgConten2.classList.add("move");
-          
-     }else{
-          imgConten2.classList.remove("move"); 
+ contantsContainer.addEventListener("transitionend",()=>{
+     const content = document.querySelectorAll(".content");
+     if(content[index].id === firstClone.id){
+          contantsContainer.style.transition = "none";
+          index = 1;
+          contantsContainer.style.transform = `translateX(-${ clintWidth * (index-1) }px)`
      }
-})  */
+ })
+
+
+
+} 
+slide()
+
+   
+ /* section-5 end */
